@@ -1,0 +1,7 @@
+ja:
+  activerecord:
+    models:
+      user: "User"
+    attributes:
+      user:
+        id: "ID"

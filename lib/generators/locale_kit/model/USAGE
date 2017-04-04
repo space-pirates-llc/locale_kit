@@ -1,0 +1,8 @@
+Description:
+    Generate locales for your model
+
+Example:
+    rails generate locale_kit:model Thing
+
+    This will create:
+        app/locales/models/thing/en.yml

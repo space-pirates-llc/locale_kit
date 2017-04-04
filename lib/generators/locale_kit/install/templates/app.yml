@@ -1,0 +1,2 @@
+<%= current_locale %>:
+  application: "<%= app_name %>"

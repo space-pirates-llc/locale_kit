@@ -1,0 +1,8 @@
+Description:
+    Genrate locale files for a your controller
+
+Example:
+    rails generate locale_kit:controller Thing
+
+    This will create:
+        app/locales/controllers/thing/{available_locales}.yml

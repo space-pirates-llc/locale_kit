@@ -1,0 +1,11 @@
+<%= current_locale %>:
+<%= locale_namespace %>
+<% if action_names.empty? -%>
+<%= "  " * (namespaces.size + 1) %>action_name:
+<%= "  " * (namespaces.size + 2) %>subject: "Subject"
+<%- else -%>
+<% action_names.each do |action_name| -%>
+<%= "  " * (namespaces.size + 1) %><%= action_name %>:
+<%= "  " * (namespaces.size + 2) %>subject: "<%= action_name.classify %>"
+<% end -%>
+<%- end -%>

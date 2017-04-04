@@ -1,0 +1,8 @@
+Description:
+    Create locales files to your application
+
+Example:
+    rails generate locale_kit:install
+
+    This will create:
+        app/locales

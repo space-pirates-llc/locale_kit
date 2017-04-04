@@ -1,0 +1,10 @@
+<%= current_locale %>:
+  <%= model_type %>:
+    models:
+      <%= model_name %>: "<%= file_name.classify %>"
+    attributes:
+      <%= model_name %>:
+        id: "ID"
+<% attribute_names.each do |attr_name| -%>
+        <%= attr_name %>: "<%= attr_name.classify %>"
+<% end -%>

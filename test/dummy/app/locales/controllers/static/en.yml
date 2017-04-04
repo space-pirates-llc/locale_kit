@@ -1,0 +1,5 @@
+en:
+  static:
+    hello:
+      key: "value"
+

@@ -1,0 +1,8 @@
+Description:
+    Generate locales for your mailer
+
+Example:
+    rails generate locale_kit:mailer Thing
+
+    This will create:
+        app/locales/mailers/thing/en.yml
