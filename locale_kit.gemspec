@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = LocaleKit::VERSION
   s.authors     = ['Sho Kusano']
   s.email       = ['sho-kusano@space-pirates.jp']
-  s.homepage    = 'https://github.com/space-priates/locale_kit'
+  s.homepage    = 'https://github.com/space-pirates-llc/locale_kit'
   s.summary     = 'Improve locales convention of Rails'
   s.description = s.summary
   s.license     = 'MIT'
