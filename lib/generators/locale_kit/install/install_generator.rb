@@ -19,7 +19,7 @@ class LocaleKit::Generators::InstallGenerator < ::Rails::Generators::Base
   attr_accessor :current_locale
 
   def locale_dir
-    Rails.root.join(LocaleKit.config.directory)
+    Pathname.new(LocaleKit.config.directory)
   end
 
   def app_name

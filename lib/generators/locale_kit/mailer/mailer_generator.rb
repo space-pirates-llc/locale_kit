@@ -17,7 +17,7 @@ class LocaleKit::Generators::MailerGenerator < LocaleKit::Generators::Base
   attr_accessor :current_locale
 
   def namespaces
-    (class_path + [file_name])
+    (class_path + [file_name + '_mailer'])
   end
 
   def locale_namespace

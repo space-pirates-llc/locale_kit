@@ -3,9 +3,9 @@
 <% if action_names.empty? -%>
 <%= "  " * (namespaces.size + 1) %>action_name:
 <%= "  " * (namespaces.size + 2) %>key: "value"
-<%- else -%>
+<% else -%>
 <% action_names.each do |action_name| -%>
 <%= "  " * (namespaces.size + 1) %><%= action_name %>:
 <%= "  " * (namespaces.size + 2) %>key: "value"
 <% end -%>
-<%- end -%>
+<% end -%>

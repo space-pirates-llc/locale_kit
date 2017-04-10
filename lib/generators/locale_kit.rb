@@ -6,7 +6,7 @@ module LocaleKit
       private
 
       def locale_dir
-        Rails.root.join(LocaleKit.config.directory)
+        Pathname.new(LocaleKit.config.directory)
       end
     end
   end

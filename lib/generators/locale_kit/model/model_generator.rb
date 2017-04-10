@@ -20,14 +20,6 @@ class LocaleKit::Generators::ModelGenerator < LocaleKit::Generators::Base
     defined?(ActiveRecord) ? :activerecord : :activemodel
   end
 
-  def namespaces
-    (class_path + [file_name])
-  end
-
-  def locale_namespace
-    namespaces.map.with_index(1) { |name, idx| ('  ' * idx) + name + ':' }.join("\n")
-  end
-
   def model_name
     (class_path + [file_name]).join('/')
   end
