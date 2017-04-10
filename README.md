@@ -1,5 +1,9 @@
 # LocaleKit
 
+[![Gem](https://img.shields.io/gem/v/locale_kit.svg)](https://rubygems.org/gems/locale_kit)
+[![Downloads](https://img.shields.io/gem/dt/locale_kit.svg)](https://rubygems.org/gems/locale_kit)
+[![CircleCI](https://img.shields.io/circleci/project/github/space-pirates-llc/locale_kit.svg)](https://circleci.com/gh/space-pirates-llc/locale_kit)
+
 Provides new convention of locales and useful generators for Rails components.
 
 ## Installation
