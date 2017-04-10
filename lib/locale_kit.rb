@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'locale_kit/version'
 require 'locale_kit/config'
 

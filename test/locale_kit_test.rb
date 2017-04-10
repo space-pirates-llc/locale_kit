@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'test_helper'
 
 class LocaleKit::Test < ActiveSupport::TestCase

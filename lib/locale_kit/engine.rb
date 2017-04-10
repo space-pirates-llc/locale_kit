@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 class LocaleKit::Engine < ::Rails::Engine
   isolate_namespace LocaleKit
 
