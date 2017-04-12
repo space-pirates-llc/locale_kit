@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    locale_kit (0.0.1)
+    locale_kit (0.0.2)
       i18n
       rails (~> 5.0.2)
 
