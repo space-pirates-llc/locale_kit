@@ -12,3 +12,11 @@ gemspec
 
 # To use a debugger
 # gem 'byebug', group: [:development, :test]
+
+group :ci do
+  gem 'checkstyle_filter-git'
+  gem 'rubocop-checkstyle_formatter'
+  gem 'rubocop-select'
+  gem 'saddler'
+  gem 'saddler-reporter-github'
+end
