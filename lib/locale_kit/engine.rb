@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
+require 'locale_kit/reloader'
+
 class LocaleKit::Engine < ::Rails::Engine
   isolate_namespace LocaleKit
-
-  config.locale_kit = LocaleKit.config
 
   generators do |app|
     Rails::Generators.configure!(app.config.generators)
@@ -12,7 +12,17 @@ class LocaleKit::Engine < ::Rails::Engine
     require 'generators/locale_kit/override/action_mailer' if defined?(ActionMailer)
   end
 
-  config.to_prepare do
+  config.locale_kit = LocaleKit.config
+
+  initializer 'draper.setup_action_controller' do
+    ActiveSupport.on_load :action_controller do
+      instance_eval do
+        use(LocaleKit::Reloader) if LocaleKit.config.reload
+      end
+    end
+  end
+
+  config.after_initialize do |_app|
     LocaleKit.reload!
   end
 end

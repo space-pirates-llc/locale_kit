@@ -23,7 +23,7 @@ module LocaleKit
     I18n.load_path = (I18n.load_path + locales).uniq
     I18n.backend.reload!
 
-    config.logger.try(:info, 'Reloaded locales by LocaleKit')
+    config.logger.try(:info, 'Reloaded locales by LocaleKit') if config.verbose
   end
   module_function :reload!
 end
