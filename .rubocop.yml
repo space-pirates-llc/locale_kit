@@ -12,6 +12,7 @@ AllCops:
     - 'db/schema.rb'
     - 'node_modules/**/*'
     - 'lib/templates/**/*'
+    - 'test/dummy/bin/**/*'
   DisplayCopNames: true
 
 Rails:
@@ -20,7 +21,7 @@ Rails:
 Style/Alias:
   EnforcedStyle: prefer_alias_method
 
-Style/AlignParameters:
+Layout/AlignParameters:
   EnforcedStyle: with_fixed_indentation
 
 Style/ClassAndModuleChildren:
@@ -34,7 +35,7 @@ Style/ClassAndModuleChildren:
 Style/Documentation:
   Enabled: false
 
-Style/EmptyLines:
+Layout/EmptyLines:
   Exclude:
     - '**/Gemfile'
 
@@ -42,7 +43,7 @@ Style/FrozenStringLiteralComment:
   Exclude:
     - '**/Gemfile'
 
-Style/FileName:
+Naming/FileName:
   Exclude:
     - '**/Gemfile'
     - '**/Guardfile'

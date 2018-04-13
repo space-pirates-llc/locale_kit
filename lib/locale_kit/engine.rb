@@ -14,7 +14,7 @@ class LocaleKit::Engine < ::Rails::Engine
 
   config.locale_kit = LocaleKit.config
 
-  initializer 'draper.setup_action_controller' do
+  initializer 'locale_kit.setup_action_controller' do
     ActiveSupport.on_load :action_controller do
       instance_eval do
         use(LocaleKit::Reloader) if LocaleKit.config.reload

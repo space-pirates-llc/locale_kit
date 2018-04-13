@@ -1,7 +1,7 @@
 require 'generators/locale_kit'
 
 class LocaleKit::Generators::InstallGenerator < ::Rails::Generators::Base
-  source_root File.expand_path('../templates', __FILE__)
+  source_root File.expand_path('templates', __dir__)
 
   def create_locale_dir
     empty_directory(locale_dir)

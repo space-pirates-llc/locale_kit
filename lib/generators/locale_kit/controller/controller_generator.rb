@@ -1,7 +1,7 @@
 require 'generators/locale_kit'
 
 class LocaleKit::Generators::ControllerGenerator < LocaleKit::Generators::Base
-  source_root File.expand_path('../templates', __FILE__)
+  source_root File.expand_path('templates', __dir__)
 
   argument(:actions, type: :array, default: [], banner: 'action action')
 

@@ -1,7 +1,7 @@
 require 'generators/locale_kit'
 
 class LocaleKit::Generators::ModelGenerator < LocaleKit::Generators::Base
-  source_root File.expand_path('../templates', __FILE__)
+  source_root File.expand_path('templates', __dir__)
 
   argument(:attributes, type: :array, default: [], banner: 'field:type field:type')
 
