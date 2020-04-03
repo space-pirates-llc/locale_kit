@@ -16,6 +16,10 @@ class LocaleKit::Generators::ModelGenerator < LocaleKit::Generators::Base
 
   attr_accessor :current_locale
 
+  def i18n_scope
+    defined?(ApplicationRecord) ? ApplicationRecord.i18n_scope : model_type
+  end
+
   def model_type
     defined?(ActiveRecord) ? :activerecord : :activemodel
   end
